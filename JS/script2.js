@@ -396,7 +396,7 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if(dice === 6) console.log('Loop is about to end...');
 }
-*/
+
 
 //// Coding Challenge #4
 
@@ -429,3 +429,21 @@ const calcTip = function (bills) {
  console.log(calcAverage([2,3,7]));
  console.log(calcAverage(tips));
  console.log(calcAverage(totals));
+ */
+
+ //Coding Chllenge #4
+
+ const data1 = [17,21,23];
+ const data2 = [12,5,-5,0,4];
+
+ console.log(`...${data1[0]}°C ...${data1[1]}°C...${data1[2]}°C...`);
+
+ const showTemperature = function (arr) {
+     let str = '';
+     for(let i = 0;i < arr.length; i++) {
+         str = str + `${arr[i]}°C in ${i + 1} days ... `;
+     }
+     console.log(`... ` + str);
+ };
+
+ showTemperature(data1);
